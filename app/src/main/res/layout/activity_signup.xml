@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+    <TextView
+        android:id="@+id/edtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:text=" SignUp"
+        android:fontFamily="casual"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"/>
+    <EditText
+        android:id="@+id/Name"
+        android:layout_below="@+id/edtSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:hint="Enter Name"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints="true" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:hint="Enter Email"
+        android:textSize="15sp"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints="true" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:hint="Create_password"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginStart="20dp"
+        android:autofillHints="true" />
+
+    <EditText
+        android:id="@+id/edtRegPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:hint="Re_enter_password"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginStart="20dp"
+        android:autofillHints="true" />
+
+    <RadioGroup
+        android:id="@+id/edtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/edtRegPassword2"
+        android:orientation="horizontal">
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtGender"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginTop="10dp"
+        android:text="SignUp"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        />
+    <Button
+        android:id="@+id/btnSignIn2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnSignUp"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginTop="8dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        />
+</RelativeLayout>

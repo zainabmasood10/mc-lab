@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:text=" Login"
+        android:fontFamily="casual"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#0E0E0E"/>
+
+
+    <EditText
+        android:layout_below="@+id/login"
+        android:id="@+id/SI_edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints="true" />
+
+    <EditText
+        android:id="@+id/SI_edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/SI_edt_email"
+        android:layout_marginStart="20dp"
+        android:autofillHints="true" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SI_edt_pass"
+        android:text="SigIn"
+        android:textSize="15sp"
+        android:layout_margin="80dp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="50dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn"
+        android:text="Signup"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="50dp"
+        />
+</RelativeLayout>
